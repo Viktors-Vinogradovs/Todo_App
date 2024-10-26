@@ -1,0 +1,63 @@
+/* Calendar.css */
+.react-calendar {
+    width: 100%;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.react-calendar__navigation button {
+    color: #6c63ff;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.react-calendar__month-view__days__day {
+    color: #333;
+}
+
+.react-calendar__tile--now {
+    background: #6c63ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.react-calendar__tile--now:hover,
+.react-calendar__tile--active:hover {
+    background: #5548c8;
+}
+
+.react-calendar__tile--active {
+    background: #6c63ff;
+    color: white;
+    border-radius: 5px;
+}
+
+/* New styles for decade and century views */
+.react-calendar__century-view__decades__decade,
+.react-calendar__decade-view__years__year,
+.react-calendar__year-view__months__month {
+    color: #333; /* Ensures visibility of text */
+    font-size: 1.2em; /* Increases font size for better readability */
+}
+
+.react-calendar__century-view__decades__decade:disabled,
+.react-calendar__decade-view__years__year:disabled,
+.react-calendar__year-view__months__month:disabled {
+    color: #ccc; /* Light gray for disabled items */
+}
+
+.react-calendar__tile {
+    padding: 15px; /* Increase padding for larger clickable areas */
+}
+
+.react-calendar__tile--active {
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 5px;
+}
+
+.react-calendar__tile--active:hover {
+    background-color: #5548c8;
+}
